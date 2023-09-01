@@ -15,11 +15,15 @@
         #hidden-text {
             display: none;
         }
+        #extra-hidden-text {
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <h1>Mid is for: 4</h1>
+    <h1 id="mid">Mid is for: 4</h1>
     <p style="font-size: larger;">4 is mid.</p>
+    <p id="extra-hidden-text">The middle number is four. Such as _4_. Now that you're 18 it's time to put letters last and salaries first</p>
     
     <!-- Button to reveal hidden text -->
     <button id="reveal-button">If you've got the key, click me!</button>
@@ -32,6 +36,10 @@
         document.getElementById("reveal-button").addEventListener("click", function() {
             document.getElementById("hidden-text").style.display = "block";
         });
+        document.getElementById("mid").addEventListener("click", function() {
+            document.getElementById("extra-hidden-text").style.display = "block";
+        });
+
     </script>
 </body>
 </html>
