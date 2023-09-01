@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Background with Green Text and Hidden Text</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            text-align: center;
+        }
+        
+        /* Initially hide the hidden text */
+        #hidden-text {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mid is for: 4</h1>
+    <p style="font-size: larger;">4 is mid.</p>
+    
+    <!-- Button to reveal hidden text -->
+    <button id="reveal-button">If you've got the key, click me!</button>
+    
+    <!-- Hidden text -->
+    <p id="hidden-text">https://cryptii.com/pipes/caesar-cipher</p>
+
+    <script>
+        // JavaScript to show the hidden text when the button is clicked
+        document.getElementById("reveal-button").addEventListener("click", function() {
+            document.getElementById("hidden-text").style.display = "block";
+        });
+    </script>
+</body>
+</html>
